@@ -93,4 +93,6 @@ user = User.query.get(1)
 user.role.name
 
 role = Role.query.get(1)
-role.users
+
+for user in role.users:
+    print(user.name)
